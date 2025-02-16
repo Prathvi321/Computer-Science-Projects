@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="python.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>CodeHub | Python Notes | Python basics | Functions</title>
+
+</head>
+<body>
+
+    <p class="content3" style="font-size: 24px;">Functions</p>
+    <p class="content3">Built In Function:</p>
+    <p class="content4"><b>Print:</b></p>
+    <p class="content4">The print() function prints the specified message to the screen, or other standard output device.</p>
+    <p class="content4">Syntax:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock15">
+          <code class="codes_line">
+print("Hello, World!")
+# Output: Hello, World!
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock15">Copy</button>
+      </div>
+
+    <p class="content4"><b>Type:</b></p>
+    <p class="content4">The type() function returns the type of the specified object.</p>
+    <p class="content4">Syntax:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock16">
+          <code class="codes_line">
+x = 5
+print(type(x))
+# Output: class 'int'
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock16">Copy</button>
+      </div>
+
+    <p class="content4"><b>Len:</b></p>
+    <p class="content4">The len() function returns the number of items in an object.</p>
+    <p class="content4">Syntax:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock17">
+          <code class="codes_line">
+x = "Hello, World!"
+print(len(x))
+# Output: 13
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock17">Copy</button>
+      </div>
+
+    <p class="content4"><b>Str:</b></p>
+    <p class="content4">The str() function converts the specified value into a string.</p>
+    <p class="content4">Syntax:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock18">
+          <code class="codes_line">
+x = 5
+print(str(x))
+# Output: 5
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock18">Copy</button>
+      </div>
+
+    <p class="content4"><b>Int:</b></p>
+    <p class="content4">The int() function converts the specified value into an integer number.</p>
+    <p class="content4">Syntax:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock19">
+          <code class="codes_line">
+x = 5.5
+print(int(x))
+# Output: 5
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock19">Copy</button>
+      </div>
+
+    <p class="content4"><b>Float:</b></p>
+    <p class="content4">The float() function converts the specified value into a floating-point number.</p>
+    <p class="content4">Syntax:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock20">
+          <code class="codes_line">
+x = 5
+print(float(x))
+# Output: 5.0
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock20">Copy</button>
+      </div>
+
+    <p class="content4"><b>Input:</b></p>
+    <p class="content4">The input() function allows user input.</p>
+    <p class="content4">Syntax:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock21">
+          <code class="codes_line">
+x = input("Enter your name: ")
+print("Hello, " + x)
+# Output: Enter your name: John
+#         Hello, John
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock21">Copy</button>
+      </div>
+
+    <p class="content4"><b>Custom Functions</b></p>
+
+    <p class="content4">A function is a block of code that only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.</p>
+    <p class="content4">In Python, a function is defined using the <b>def</b> keyword.</p>
+    <p class="content4">Syntax:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock1">
+          <code class="codes_line">
+def my_function():
+    print("Hello from a function")
+
+my_function()
+
+# Output: Hello from a function        
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock1">Copy</button>
+      </div>
+
+    <p class="content4">Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.</p>
+    <p class="content4">The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock2">
+          <code class="codes_line">
+def my_function(fname):
+    print(fname + " Refsnes")
+
+
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+
+# Output: Emil Refsnes
+#         Tobias Refsnes
+#         Linus Refsnes
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock2">Copy</button>
+      </div>
+
+    <p class="content4">You can also send arguments with the key = value syntax. This way the order of the arguments does not matter.</p>
+    <p class="content4">The following example has a function with one argument (child1). When the function is called, we can also pass along a key-value pair child2 = "Linus", this way the order of the arguments does not matter.</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock3">
+          <code class="codes_line">
+def my_function(child1, child2):
+    print("The youngest child is " + child2)
+
+my_function(child1 = "Emil", child2 = "Tobias")
+
+# Output: The youngest child is Tobias
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock3">Copy</button>
+      </div>
+
+    <p class="content4">If the number of arguments is unknown, add a * before the parameter name:</p>
+
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock4">
+          <code class="codes_line">
+def my_function(*kids):
+    print("The youngest child is " + kids[2])
+
+my_function("Emil", "Tobias", "Linus")
+
+# Output: The youngest child is Linus
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock4">Copy</button>
+      </div>
+
+    <p class="content4">To let a function return a value, use the <b>return</b> statement:</p>
+
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock5">
+          <code class="codes_line">
+def my_function(x):
+    return 5 * x
+
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
+
+# Output: 15
+#         25
+#         45
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock5">Copy</button>
+      </div>
+
+    <p class="content4">
+        The <b>pass</b> statement is a null statement. The difference between a comment and a pass statement in Python is that while the interpreter ignores a comment entirely, pass is not ignored.
+    </p>
+    <p class="content4">
+        However, nothing happens when the pass is executed
+    </p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label
+        ">Python</div>
+        <pre class="language-javascript" id="codeBlock6">
+          <code class="codes_line">
+def myfunction():
+
+    pass
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock6">Copy</button>
+      </div>  
+
+    <p class="content4">Recursion</p>
+    <p class="content4">Python also accepts function recursion, which means a defined function can call itself.</p>
+    <p class="content4">Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result.</p>
+    <p class="content4">The developer should be very careful with recursion as it can be quite easy to slip into writing a function that never terminates, or one that uses excess amounts of memory or processor power. However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming.</p>
+
+    <p class="content4">In this example, tri_recursion() is a function that we have defined to call itself ("recurse"). We use the k variable as the data, which decrements (-1) every time we recurse. The recursion ends when the condition is not greater than 0 (i.e. when it is 0).</p>
+
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock7">
+          <code class="codes_line">
+def tri_recursion(k):
+    if(k > 0):
+        result = k + tri_recursion(k - 1)
+        print(result)
+    else:
+        result = 0
+    return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)
+
+# Output: 1
+#         3
+#         6
+#         10
+#         15
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock7">Copy</button>
+      </div>  
+
+    <p class="content4">The <b>lambda</b> keyword is used to create small anonymous functions.</p>
+    <p class="content4">A lambda function can take any number of arguments, but can only have one expression.</p>
+    <p class="content4">Syntax:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock8">
+          <code class="codes_line">
+x = lambda a : a + 10
+print(x(5))
+
+# Output: 15
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock8">Copy</button>
+      </div>  
+
+    <p class="content4">Lambda functions can take any number of arguments:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock9">
+          <code class="codes_line">
+x = lambda a, b : a * b
+print(x(5, 6))
+
+# Output: 30
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock9">Copy</button>
+      </div>  
+
+    <p class="content4">A lambda function that sums argument a, b, and c and print the result:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock10">
+          <code class="codes_line">
+x = lambda a, b, c : a + b + c
+print(x(5, 6, 2))
+
+# Output: 13
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock10">Copy</button>
+      </div>  
+
+    <p class="content4">The power of lambda is better shown when you use them as an anonymous function inside another function.</p>
+    <p class="content4">Say you have a function definition that takes one argument, and that argument will be multiplied with an unknown number:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock11">
+          <code class="codes_line">
+def myfunc(n):
+    return lambda a : a * n
+
+mydoubler = myfunc(2)
+mytripler = myfunc(3)
+
+print(mydoubler(11))
+print(mytripler(11))
+
+# Output: 22
+#         33
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock11">Copy</button>
+      </div>  
+
+    <p class="content4">Use the <b>filter()</b> method to filter the elements of an iterable, for which the function returns True.</p>
+    <p class="content4">The filter() method filters the given sequence with the help of a function that tests each element in the sequence to be true or not.</p>
+    <p class="content4">Syntax:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock12">
+          <code class="codes_line">
+def is_even(n):
+    return n % 2 == 0
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+even_numbers = list(filter(is_even, numbers))
+
+print(even_numbers)
+
+# Output: [2, 4, 6, 8, 10]
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock12">Copy</button>
+      </div>  
+
+    <p class="content4">Use the <b>map()</b> method to apply a function to all the items in an input_list.</p>
+    <p class="content4">The map() function applies a given function to all the items of an iterable and returns an iterator.</p>
+    <p class="content4">Syntax:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock13">
+          <code class="codes_line">
+def double(n):
+    return n * 2
+
+numbers = [1, 2, 3, 4, 5]
+
+double_numbers = list(map(double, numbers))
+
+print(double_numbers)
+
+# Output: [2, 4, 6, 8, 10]
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock13">Copy</button>
+      </div>  
+
+    <p class="content4">Use the <b>reduce()</b> method to apply a function to the elements of an iterable cumulatively.</p>
+    <p class="content4">The reduce() function is defined in the functools module. Like the map() function, reduce() is also defined in the functools module.</p>
+    <p class="content4">Syntax:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock14">
+          <code class="codes_line">
+from functools import reduce
+
+def add(x, y):
+    return x + y
+
+numbers = [1, 2, 3, 4, 5]
+
+sum = reduce(add, numbers)
+
+print(sum)
+
+# Output: 15
+          </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock14">Copy</button>
+      </div>  
+      <p class="content3"><b>Conclusion:</b></p>
+      <p class="content4">In this tutorial, we learned about functions in Python. We learned how to define a function, pass arguments to a function, return values from a function, use the pass statement, recursion, lambda functions, filter(), map(), and reduce() methods.</p>
+      <p class="content4">In the next tutorial, we will learn about Python modules.</p>
+
+<script src="https://prismjs.org/prism.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+<script src="prism.js"></script>
+</body>
+</html>

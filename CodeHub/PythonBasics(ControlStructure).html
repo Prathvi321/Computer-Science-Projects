@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHub | Python Notes | Python basics | Control Structure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p class="content3">Control Structure</p>
+    <p class="content4">Control structures are used to control the flow of the program. It is used to execute the code
+        based on certain conditions. The control structures in Python are:</p>
+    <p class="content3">1. Conditional Statements</p>
+
+    <p class="content4">Conditional statements are used to execute the code based on certain conditions. The conditional
+        statements in Python are:</p>
+    <p class="content3">a. If statement</p>
+    <p class="content4">The if statement is used to execute the code if a certain condition is true. The syntax of the
+        if statement is:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock1">
+            <code class="codes_line">
+if condition:
+    # code to be executed if the condition is true
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock1">Copy</button>
+    </div>
+
+    <p class="content4">Example:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock2">
+            <code class="codes_line">
+x = 10
+if x > 5:
+
+    print("x is greater than 5")
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock2">Copy</button>
+    </div>
+
+    <p class="content3">b. If-else statement</p>
+    <p class="content4">The if-else statement is used to execute the code based on the condition. If the condition is
+        true, the code inside the if block is executed, and if the condition is false, the code inside the else block is
+        executed. The syntax of the if-else statement is:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock3">
+            <code class="codes_line">
+if condition:
+    # code to be executed if the condition is true
+else:
+    # code to be executed if the condition is false
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock3">Copy</button>
+    </div>
+
+
+    <p class="content4">Example:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock4">
+            <code class="codes_line">
+x = 10
+if x > 5:
+    print("x is greater than 5")
+else:
+    print("x is less than or equal to 5")
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock4">Copy</button>
+    </div>
+
+    <p class="content3">c. If-elif-else statement</p>
+    <p class="content4">The if-elif-else statement is used to execute the code based on multiple conditions. If the
+        condition in the if block is true, the code inside the if block is executed. If the condition in the elif block is
+        true, the code inside the elif block is executed. If none of the conditions are true, the code inside the else
+        block is executed. The syntax of the if-elif-else statement is:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock5">
+            <code class="codes_line">
+if condition1:
+    # code to be executed if condition1 is true
+elif condition2:
+    # code to be executed if condition2 is true
+else:
+    # code to be executed if none of the conditions are true
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock5">Copy</button>
+    </div>
+
+    <p class="content4">Example:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock6">
+            <code class="codes_line">
+x = 10
+if x > 5:
+    print("x is greater than 5")
+elif x == 5:
+    print("x is equal to 5")
+else:
+    print("x is less than 5")
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock6">Copy</button>
+    </div>
+
+    <p class="content3">2. Looping Statements</p>
+    <p class="content4">Looping statements are used to execute a block of code multiple times. The looping statements in
+        Python are:</p>
+    <p class="content3">a. For loop</p>
+    <p class="content4">The for loop is used to iterate over a sequence (list, tuple, string, etc.) and execute the code
+        for each item in the sequence. The syntax of the for loop is:</p>
+    
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock7">
+            <code class="codes_line">
+for item in sequence:
+    # code to be executed for each item in the sequence
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock7">Copy</button>
+    </div>
+
+    <p class="content4">Example:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label
+        ">Python</div>
+        <pre class="language-javascript" id="codeBlock8">
+            <code class="codes_line">
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock8">Copy</button>
+    </div>
+
+    <p class="content3">b. While loop</p>
+    <p class="content4">The while loop is used to execute a block of code as long as a certain condition is true. The
+        syntax of the while loop is:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock9">
+            <code class="codes_line">
+while condition:
+    # code to be executed as long as the condition is true
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock9">Copy</button>
+    </div>
+    
+    <p class="content4">Example:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock10">
+            <code class="codes_line">
+i = 1 
+while i <= 5:
+    print(i)
+    i += 1
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock10">Copy</button>
+    </div>
+
+    <p class="content3">3. Control Statements</p>
+    <p class="content4">Control statements are used to control the flow of the program. The control statements in Python
+        are:</p>
+    <p class="content3">a. Break statement</p>
+    <p class="content4">The break statement is used to exit the loop prematurely. It is used to break out of the loop
+        when a certain condition is met. The break statement can be used in both for and while loops. The syntax of the
+        break statement is:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock11">
+            <code class="codes_line">
+for item in sequence:
+    if condition:
+        break
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock11">Copy</button>
+    </div>
+
+    <p class="content4">Example:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock12">
+            <code class="codes_line">
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    if fruit == "banana":
+        break
+    print(fruit)
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock12">Copy</button>
+    </div>
+
+    <p class="content3">b. Continue statement</p>
+    <p class="content4">The continue statement is used to skip the rest of the code inside the loop and continue with the
+        next iteration. It is used to skip the current iteration of the loop when a certain condition is met. The
+        continue statement can be used in both for and while loops. The syntax of the continue statement is:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock13">
+            <code class="codes_line">
+for item in sequence:
+    if condition:
+        continue
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock13">Copy</button>
+    </div>
+
+    <p class="content4">Example:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock14">
+            <code class="codes_line">
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    if fruit == "banana":
+        continue
+    print(fruit)
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock14">Copy</button>
+    </div>
+
+    <p class="content3">c. Pass statement</p>
+    <p class="content4">The pass statement is used as a placeholder when a statement is required syntactically but you do
+        not want any code to execute. The pass statement is a null operation; nothing happens when it is executed. The
+        syntax of the pass statement is:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock15">
+            <code class="codes_line">
+for item in sequence:
+    pass
+
+while condition:
+    pass
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock15">Copy</button>
+    </div>
+
+    <p class="content4">Example:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">Python</div>
+        <pre class="language-javascript" id="codeBlock16">
+            <code class="codes_line">
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    pass
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock16">Copy</button>
+    </div>
+
+    <script src="https://prismjs.org/prism.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <script src="prism.js"></script>
+</body>
+</html>

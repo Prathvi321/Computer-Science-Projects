@@ -1,0 +1,190 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation styles */
+nav.main-navigation {
+  background-color: #484848;
+  color: #fff;
+  padding: 10px;
+}
+
+nav.main-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav.main-navigation ul li {
+  margin-right: 20px;
+}
+
+nav.main-navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+nav.main-navigation ul li a:hover {
+  background-color: #2b2b2b;
+  border-radius: 3px;
+}
+
+/* Sub-navigation styles */
+nav.main-navigation ul li ul.sub-navigation {
+  display: none;
+  position: absolute;
+  background-color: #2b2b2b;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+nav.main-navigation ul li:hover ul.sub-navigation {
+  display: block;
+}
+
+nav.main-navigation ul li ul.sub-navigation li {
+  margin: 0;
+}
+
+nav.main-navigation ul li ul.sub-navigation li a {
+  padding: 5px 10px;
+}
+
+nav.main-navigation ul li ul.sub-navigation li a:hover {
+  background-color: #555;
+}
+
+/* Anchor tag styles */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Head div styles */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items:stretch;
+  padding: 20px 0px 0px 20px;
+  background-color: #fff;
+
+}
+
+.head .Content {
+  max-width: 80%;
+}
+
+.head .image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  height: auto;
+  filter: drop-shadow(5px 5px 5px #343434);
+}
+
+.content{
+  padding: 0px 20px 20px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.about{
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.content1{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0px 20px 10px 20px;;
+}
+.lists{
+  padding: 10px 10px 20px 20px;
+  background-color: #fff;
+}
+.list{
+  font-weight: bold;
+}
+.content2{
+  font-size: 20px;
+}
+
+.content3{
+  padding: 0px 0px 10px 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.content4{
+  padding: 0px 0px 10px 10px;
+  margin: 10px;
+}
+
+.code-block {
+  position: relative; /* For positioning the copy button */
+  background-color: hsl(0, 0%, 27%); /* Light gray background */
+  border: 2px solid #000000; /* Subtle border */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between blocks */
+}
+
+.code-block pre {
+  padding: 0 10px;
+  overflow-x: auto; /* Add horizontal scroll if code overflows */
+  white-space: pre-wrap; /* Allow code to wrap */
+  margin: 0; /* Remove default margin from <pre> */
+}
+
+.codes_line{
+    font-size: 14px;
+    color: white;
+    font-family: 'Roboto Mono', 'Source Code Pro', 'Ubuntu Mono', monospace;
+}
+.copy-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: #202020; /* Green */
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: #7e7e7e; /* Darker green on hover */
+}
+
+.copy-button:focus { /* Optional: Add focus styles */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.copied { /* Style for the "Copied!" message */
+  background-color: #007bff; /* Blue */
+}
+.code-label {
+  background-color: #7e7e7e; /* Slightly darker gray for label */
+  padding: 10px;
+  border-bottom: 2px solid #000000;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-weight: bold;
+}

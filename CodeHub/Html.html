@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="files.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>CodeHub | Html Notes</title>
+
+</head>
+
+<body>
+    <p class="content4"><b>Html (Hypertext Markup Language):</b>It's the standard markup language for creating web
+        pages. HTNL Elements are the building block of HTML page.</p>
+    <p class="content4"><b>Syntax:</b>Html uses tags to define elements. Tags are enclosed in angle brackets &lt;&gt;
+        and usually come in pairs - an opening tag and a closing tag. The closing tag has a / before the tag name like
+        &lt;/tagname&gt;.</p>
+    <p class="content3">Basic Structure:</p>
+    <div class="code-block" style="margin-left: 10px; margin-right: 10px;">
+        <div class="code-label">Html</div>
+        <pre class="language-javascript" id="codeBlock1">
+            <code class="codes_line">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- content goes here--&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock1">Copy</button>
+    </div>
+    <p class="content3"><b>Tags:</b></p>
+    <ul style="list-style-type: disc;">
+        <li class="content4"><b>&lt;!DOCTYPE html&gt;:</b> Defines the document type and version of HTML.</li>
+        <li class="content4"><b>&lt;html&gt;:</b> Contains the entire HTML document.</li>
+        <li class="content4"><b>&lt;head&gt;:</b> Contains meta-information about the document, such as title, links to
+            stylesheets, scripts, etc.</li>
+        <li class="content4"><b>&lt;title&gt;:</b> Sets the title of the document, which appears in the browser tab.
+        </li>
+        <li class="content4"><b>&lt;body&gt;:</b> Contains the content of the document, such as text, images, links,
+            etc.</li>
+        <li class="content4"><b>&lt;!-- comment --&gt;:</b> Used to add comments to the code. Comments are not displayed
+            in the browser.</li>
+        <li class="content4"><b>&lt;h1&gt; to &lt;h6&gt;:</b> Headings of different sizes, with h1 being the largest and
+            h6 the smallest.</li>
+        <li class="content4"><b>&lt;p&gt;:</b> Paragraph tag for text content.</li>
+        <li class="content4"><b>&lt;a&gt;:</b> Anchor tag for links. The href attribute specifies the URL of the page
+            the link goes to.</li>
+        <li class="content4"><b>&lt;img&gt;:</b> Image tag for displaying images. The src attribute specifies the image
+            file.</li>
+        <li class="content4"><b>&lt;alt&gt;:</b> Specifies an alternative text for an image, if the image cannot be
+            displayed.</li>
+        <li class="content4"><b>&lt;ul&gt; &lt;ol&gt; &lt;li&gt;:</b> Used for creating lists. &lt;ul&gt; creates an
+            unordered list, &lt;ol&gt; creates an ordered list, and &lt;li&gt; defines a list item.</li>
+        <li class="content4"><b>&lt;div&gt;:</b> Division or section in an HTML document. Used for grouping and styling
+            content.</li>
+        <li class="content4"><b>&lt;span&gt;:</b> Inline container used to apply styles to a section of text.</li>
+        <li class="content4"><b>&lt;style&gt;:</b> Contains CSS rules for styling the HTML document.</li>
+        <li class="content4"><b>&lt;script&gt;:</b> Contains JavaScript code or links to external scripts.</li>
+    </ul>
+    <p class="content3"><b>Tables:</b></p>
+    <p class="content4">Tables are used to display data in rows and columns. The basic structure of a table consists of
+        the &lt;table&gt; element to create the table, &lt;tr&gt; for table rows, &lt;th&gt; for table headers, and
+        &lt;td&gt; for table data cells.</p>
+    <ul style="list-style-type: disc;">
+        <li class="content4"><b>&lt;table&gt;:</b> Creates a table.</li>
+        <li class="content4"><b>&lt;tr&gt;:</b> Defines a row in the table.</li>
+        <li class="content4"><b>&lt;th&gt;:</b> Defines a header cell in the table.</li>
+        <li class="content4"><b>&lt;td&gt;:</b> Defines a data cell in the table.</li>
+        <li class="content4"><b>&lt;caption&gt;:</b> Provide title for a table or Adds a caption to the table.</li>
+        <li class="content4"><b>Table Example:</b></li>
+        <table style="border: 1px solid black; border-collapse: collapse; margin-left: auto; margin-right: auto;">
+            <caption style="border: 1px solid black">Monthly Sales Report</caption>
+            <tr>
+                <th style="border: 1px solid black;">Month</th>
+                <th style="border: 1px solid black;">Sales</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">January</td>
+                <td style="border: 1px solid black;">1000</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">February</td>
+                <td style="border: 1px solid black;">1500</td>
+            </tr>
+        </table>
+        <br>
+        <div class="code-block" style="margin-right: 20px;">
+            <div class="code-label">Html</div>
+            <pre class="language-javascript" id="codeBlock2">
+                <code class="codes_line">
+&lt;table&gt;
+    &lt;caption&gt;Monthly Sales Report&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Month&lt;/th&gt;
+        &lt;th&gt;Sales&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;January&lt;/td&gt;
+        &lt;td&gt;1000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;February&lt;/td&gt;
+        &lt;td&gt;1500&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+                </code>
+            </pre>
+            <button class="copy-button" data-clipboard-target="#codeBlock2">Copy</button>
+        </div>
+
+    </ul>
+    <p class="content3"><b>Text Formatting:</b></p>
+    <p class="content4">HTML provides various tags to format text, such as <b>&lt;b&gt;</b> for bold, <b>&lt;i&gt;</b>
+        for italic, <b>&lt;u&gt;</b> for underline, <b>&lt;mark&gt;</b> for highlighting, <b>&lt;sub&gt;</b> for
+        subscript, and <b>&lt;sup&gt;</b> for superscript.</p>
+    <ul class="content4" style="list-style-type: disc;">
+        <li class="content4"><b>&lt;b&gt;:</b> Bold text</li>
+        <li class="content4"><b>&lt;i&gt;:</b> Italic text</li>
+        <li class="content4"><b>&lt;u&gt;:</b> Underlined text</li>
+        <li class="content4"><b>&lt;mark&gt;:</b> Highlighted text</li>
+        <li class="content4"><b>&lt;sub&gt;:</b> Subscript text</li>
+        <li class="content4"><b>&lt;sup&gt;:</b> Superscript text</li>
+        <li class="content4"><b>&lt;s&gt;:</b> Strikethrough text</li>
+    </ul>
+    <p class="content3"><b>Links and Navigation:</b></p>
+    <p class="content4">Links are created using the <b>&lt;a&gt;</b> tag, with the href attribute specifying the URL of
+        the page the link goes to. Links can be styled using CSS to change their appearance.</p>
+    <ul>
+        <li class="content4"><b>&lt;a href="url"&gt;Link Text&lt;/a&gt;:</b> Creates a hyperlink with the specified URL
+            and link text.</li>
+        <ul style="list-style-type: circle;">
+            <li class="content4"><b>&lt;a href="#section"&gt;Link to Section&lt;/a&gt;:</b> Creates an internal link to
+                a section within the same page.</li>
+            <li class="content4"><b>&lt;a href="mailto:email"&gt;Email Link&lt;/a&gt;:</b> Creates a link to send an
+                email to the specified email address.</li>
+            <li class="content4"><b>&lt;a href="tel:phone"&gt;Phone Link&lt;/a&gt;:</b> Creates a link to call the
+                specified phone number.</li>
+        </ul>
+        <li class="content4"><b>&lt;nav&gt;:</b> Defines a navigation link.</li>
+        <li class="content4"><b>&lt;ul&gt; & &lt;li&gt;:</b> Often used to Creates an unordered list of navigation Menu
+            Links.</li>
+    </ul>
+    <p class="content3"><b>Attributes:</b></p>
+    <p class="content4">Attributes provide additional information about HTML elements. They are always included in the
+        opening tag and are written as name-value pairs, separated by an equals sign.</p>
+    <ul style="list-style-type: disc;">
+        <li class="content4"><b>id:</b> Specifies a unique id for an element.</li>
+        <li class="content4"><b>class:</b> Specifies one or more class names for an element (used for styling with CSS).
+        </li>
+        <li class="content4"><b>style:</b> Specifies inline CSS styles for an element.</li>
+        <li class="content4"><b>title:</b> Specifies extra information about an element (displayed as a tooltip).</li>
+        <li class="content4"><b>href:</b> Specifies the URL of the page the link goes to.</li>
+        <li class="content4"><b>src:</b> Specifies the URL of an image or other media file.</li>
+        <li class="content4"><b>alt:</b> Specifies an alternative text for an image, if the image cannot be displayed.
+        </li>
+        <li class="content4"><b>width & height:</b> Specifies the width and height of an element.</li>
+        <li class="content4"><b>target:</b> Specifies where to open the linked document.</li>
+    </ul>
+    <p class="content3"><b>Forms:</b></p>
+    <p class="content4">Forms are used to collect user input, such as text fields, checkboxes, radio buttons, and submit
+        buttons. The <b>&lt;form&gt;</b> element is used to create a form, and various input elements are used to
+        collect data.</p>
+    <ul style="list-style-type: disc;">
+        <li class="content4"><b>&lt;form&gt;:</b> Creates a form for user input.</li>
+        <li class="content4"><b>&lt;input&gt;:</b> Creates an input field for the user to enter data.</li>
+        <li class="content4"><b>&lt;textarea&gt;:</b> Creates a multiline text input field.</li>
+        <li class="content4"><b>&lt;button&gt;:</b> Creates a clickable button.</li>
+        <li class="content4"><b>&lt;select&gt; & &lt;option&gt;:</b> Creates a dropdown list for the user to select
+            from.</li>
+        <li class="content4"><b>&lt;label&gt;:</b> Defines a label for an input element.</li>
+        <li class="content4"><b>&lt;fieldset&gt; & &lt;legend&gt;:</b> Groups related elements in a form and provides a
+            caption for the group.</li>
+    </ul>
+    <p class="content3"><b>Images:</b></p>
+    <p class="content4">Images are displayed using the <b>&lt;img&gt;</b> tag, with the src attribute specifying the URL
+        of the image file. The alt attribute provides alternative text for the image, which is displayed if the image
+        cannot be loaded.</p>
+    <ul style="list-style-type: disc;">
+        <li class="content4"><b>&lt;img src="url" alt="description"&gt;:</b> Displays an image with the specified URL
+            and description.</li>
+        <li class="content4"><b>&lt;figure&gt; & &lt;figcaption&gt;:</b> Groups an image and its caption together.</li>
+    </ul>
+    <p class="content3"><b>Audio and Video:</b></p>
+    <p class="content4">Audio and video files can be embedded in an HTML document using the <b>&lt;audio&gt;</b> and
+        <b>&lt;video&gt;</b> tags. The src attribute specifies the URL of the media file, and the controls attribute
+        adds playback controls.</p>
+    <ul style="list-style-type: disc;">
+        <li class="content4"><b>&lt;audio src="url" controls&gt;:</b> Embeds an audio file with playback controls.</li>
+        <li class="content4"><b>&lt;video src="url" controls&gt;:</b> Embeds a video file with playback controls.</li>
+        <li class="content4"><b>&lt;source&gt;:</b> Specifies multiple sources for audio or video files, allowing the
+            browser to choose the most suitable one.</li>
+    </ul>
+    <p class="content3"><b>Meta Tags:</b></p>
+    <p class="content4">Meta tags provide metadata about the HTML document, such as the character set, author,
+        description, and keywords. They are placed in the &lt;head&gt; section of the document.</p>
+    <ul style="list-style-type: disc;">
+        <li class="content4"><b>&lt;meta charset="UTF-8"&gt;:</b> Specifies the character encoding for the document.
+        </li>
+        <li class="content4"><b>&lt;meta name="description" content="description"&gt;:</b> Provides a description of the
+            document.</li>
+        <li class="content4"><b>&lt;meta name="keywords" content="keywords"&gt;:</b> Specifies keywords related to the
+            document.</li>
+        <li class="content4"><b>&lt;meta name="author" content="author"&gt;:</b> Specifies the author of the document.
+        </li>
+        <li class="content4"><b>&lt;meta http-equiv="refresh" content="5;url=page.html"&gt;:</b> Redirects to another
+            page after 5 seconds.</li>
+    </ul>
+    <p class="content3"><b>Lists:</b></p>
+    <p class="content4">HTML provides tags to create ordered lists (&lt;ol&gt;), unordered lists (&lt;ul&gt;), and list
+        items (&lt;li&gt;). Lists can be nested inside one another to create sublists.</p>
+    <ul style="list-style-type: disc;">
+        <li class="content4"><b>&lt;ol&gt;:</b> Creates an ordered list with numbered items.</li>
+        <li class="content4"><b>&lt;ul&gt;:</b> Creates an unordered list with bulleted items.</li>
+        <li class="content4"><b>&lt;li&gt;:</b> Defines a list item in an ordered or unordered list.</li>
+    </ul>
+    <p class="content3"><b>Comments:</b></p>
+    <p class="content4">Comments in HTML are used to add notes or explanations to the code. They are not displayed in
+        the browser and are only visible in the source code.</p>
+    <ul style="list-style-type: disc;">
+        <li class="content4"><b>&lt;!-- comment --&gt;:</b> Adds a comment to the code.</li>
+    </ul>
+
+
+    <script src="prism.js"></script>
+    <script src="https://prismjs.org/prism.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+
+</body>
+
+</html>

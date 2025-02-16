@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="python.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>CodeHub | Python Notes | Python basics | Functions</title>
+
+</head>
+
+<body>
+    <p class="content3">API (Application Programming Interface):</p>
+    <p class="content4">An API is a set of rules and protocols that allows one software application to communicate with another. It is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you’re using an API.</p>
+    <p class="content4">APIs are used to connect services and share data. For example, when you use an application like Instagram, you take a picture and apply a filter. You then click the share button and the image is posted on your Instagram account. The application connects to the Instagram API and shares the image to your account.</p>
+    <ul>
+        <li class="content4">What APIs Are and Why they're Used</li>
+        <li class="content4">Types of APIs</li>
+        <li class="content4">How APIs Work</li>
+        <li class="content4">APIs in Python</li>
+        <li class="content4">APIs in Webdevlopment</li>
+    </ul>
+    <p class="content3">What APIs Are and Why they're Used:</p>
+    <p class="content4">APIs are used to connect services and share data. For example, when you use an application like Instagram, you take a picture and apply a filter. You then click the share button and the image is posted on your Instagram account. The application connects to the Instagram API and shares the image to your account.</p>
+    <p class="content3">Types of APIs:</p>
+    <p class="content4">There are many different types of APIs for operating systems, applications, or websites. Windows, for example, has many API sets that are used by system hardware and applications — when you copy and paste text from one application to another, it is the API that allows that to work.</p>
+    <p class="content4">Most operating environments, such as MS-Windows, provide an API so that programmers can write applications consistent with the operating environment. Today, APIs are also specified by websites. For example, Amazon or eBay APIs allow developers to use the existing retail infrastructure to create specialized web stores.</p>
+    <p class="content3">How APIs Work:</p>
+    <p class="content4">APIs work using ‘requests’ and ‘responses’. When you use an application on your mobile phone, the application connects to the Internet and sends data to a server. The server then retrieves that data, interprets it, performs the necessary actions and sends it back to your phone. The application then interprets that data and presents you with the information you wanted in a readable way. This is what an API is - all of this happens via API.</p>
+    <p class="content3">APIs in Python:</p>
+    <p class="content4">Python has a built-in package called ‘json’, which can be used to work with JSON data. Python also has a built-in package called ‘urllib2’, which can be used to send requests to URLs. There are many libraries in Python that can be used to access the API. Some of the most popular libraries include ‘requests’, ‘http.client’, and ‘urllib’. You can install these libraries using pip.</p>
+    <p class="content3">APIs in Webdevlopment:</p>
+    <p class="content4">APIs are used in web development to allow different software applications to communicate with each other. Programmers use APIs to access web services and data. For example, when you use Facebook on your computer, the browser interacts with Facebook’s servers and retrieves the latest posts from your friends. APIs allow websites to talk to each other without the need for you to understand how the other website’s code is written.</p>
+    <p class="content4">APIs are used to connect services and share data. For example, when you use an application like Instagram, you take a picture and apply a filter. You then click the share button and the image is posted on your Instagram account. The application connects to the Instagram API and shares the image to your account.</p>
+    <p class="content4">APIs are used in web development to allow different software applications to communicate with each other. Programmers use APIs to access web services and data. For example, when you use Facebook on your computer, the browser interacts with Facebook’s servers and retrieves the latest posts from your friends. APIs allow websites to talk to each other without the need for you to understand how the other website’s code is written.</p>
+
+    <p class="content4">Using Gemini API in Python to Create ChatBot</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">API</div>
+        <pre class="language-javascript" id="codeBlock1">
+            <code class="codes_line">
+import os
+import google.generativeai as genai
+                
+genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+                
+# Create the model
+generation_config = {
+    "temperature": 1,
+    "top_p": 0.95,
+    "top_k": 40,
+    "max_output_tokens": 8192,
+    "response_mime_type": "text/plain",
+}
+                
+model = genai.GenerativeModel(
+    model_name="gemini-2.0-flash",
+    generation_config=generation_config,
+)
+                
+chat_session = model.start_chat(
+    history=[
+    ]
+)
+                
+response = chat_session.send_message("INSERT_INPUT_HERE")
+                
+print(response.text)
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock1">Copy</button>
+    </div>
+
+    <p class="content3">Example:</p>
+    <div class="code-block" style="margin: 10px;">
+        <div class="code-label">API</div>
+        <pre class="language-javascript" id="codeBlock2">
+            <code class="codes_line">
+import requests
+response = requests.get('https://api.github.com')
+print(response.json())
+            </code>
+        </pre>
+        <button class="copy-button" data-clipboard-target="#codeBlock2">Copy</button>
+    </div>
+
+    <p class="content3">More About API</p>
+    <p class="content4">APIs are used to connect services and share data. For example, when you use an application like Instagram, you take a picture and apply a filter. You then click the share button and the image is posted on your Instagram account. The application connects to the Instagram API and shares the image to your account.</p>
+    <p class="content4">APIs are used in web development to allow different software applications to communicate with each other. Programmers use APIs to access web services and data. For example, when you use Facebook on your computer, the browser interacts with Facebook’s servers and retrieves the latest posts from your friends. APIs allow websites to talk to each other without the need for you to understand how the other website’s code is written.</p>
+    <p class="content4">APIs are used to connect services and share data. For example, when you use an application like Instagram, you take a picture and apply a filter. You then click the share button and the image is posted on your Instagram account. The application connects to the Instagram API and shares the image to your account.</p>
+    <p class="content4">APIs are used in web development to allow different software applications to communicate with each other. Programmers use APIs to access web services and data. For example, when you use Facebook on your computer, the browser interacts with Facebook’s servers and retrieves the latest posts from your friends. APIs allow websites to talk to each other without the need for you to understand how the other website’s code is written.</p>
+    <script src="https://prismjs.org/prism.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <script src="prism.js"></script>
+</body>
+
+</html>
