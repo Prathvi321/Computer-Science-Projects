@@ -7,4 +7,4 @@ I have Learnt quite a few coding Languages:
   3. Html/CSS/JavaScript
   4. C++ and Java
 I have Buld Some of the projects on AI usning the API's
-Which I will upload on this repository soon!
+Which I will upload on this repository soon.
